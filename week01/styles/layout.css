@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    color: white;
+}
+
+.head {
+    width: auto;
+    height: 100px;
+    background-color: rgb(65, 63, 63);
+    padding: 10px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 50px;
+    align-items:center;
+}
+
+main {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 66% 34%;
+    color: black;
+}
+
+.main {
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+}
+
+.aside {
+    color: black;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(65, 63, 63);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.foot {
+    padding: 10px;
+}
