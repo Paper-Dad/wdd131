@@ -40,8 +40,8 @@ nav a:hover {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    width: 900px;
     margin: 0 auto;
+    max-width: 900px;
 }
 
 h1 {
