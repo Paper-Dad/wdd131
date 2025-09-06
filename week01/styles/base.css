@@ -135,7 +135,6 @@ ul {
     grid-column: 1/ span 3;
     grid-row: 1/ span 4;
     align-self: center;
-    text-decoration: underline;
 }
 
 footer{
