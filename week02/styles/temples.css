@@ -1,0 +1,105 @@
+:root {
+    --primary-font: "Winky Rough", sans-serif;
+    --secondary-font: "Roboto Slab", serif;
+}
+
+* {
+    color: black;
+    font-family: var(--secondary-font);
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: lavender;
+    max-width: 1000px;
+}
+
+header {
+    background-color: lavender;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headti {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.headti.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 25px;place-items: center;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute; 
+  top: 1rem; 
+  right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation.open a {
+	display: block;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-self: center;
+    background-color: lavender;
+}
+
+.foot {
+    margin:0;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.footy {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}

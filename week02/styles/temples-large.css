@@ -1,0 +1,36 @@
+@media (min-width: 44.5em) {
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        font-size: x-large;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 110px;
+        background-color: lavender;
+    }
+
+    .headti {
+        align-content: center;
+        font-size: x-large;
+        padding: 10px;
+    }
+}
