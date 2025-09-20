@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | WDD130</title>
+    <meta name="description"
+        content="Country page for week03 project for WDD 131 - Dynamic Web Fundamentals. This webpage is designed by Ben Roberts and will work as a page to highlight my home country for Ben Roberts">
+    <meta name="author" content="Benjamin Roberts">
+    <link rel="stylesheet" href="week03/styles/country-page.css">
+    <link rel="stylesheet" href="week03/styles/country-page-large.css">
+    <script src="week03/scripts/country-page.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Winky+Rough:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Canada</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="week03/images/Flag-Big.webp" media="(min-width: 675px)">
+                <img src="week03/images/Flag-small.webp" alt="Canadian Flag" width="500" height="250">
+            </picture>
+        </div>    
+        <div class="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td>Area:</td>
+                    <td>9,984,670 km²</td>
+                </tr>
+                <tr>
+                    <td>Population:</td>
+                    <td>~40 million</td>
+                </tr>
+                <tr>
+                    <td>Capital:</td>
+                    <td>Ottawa</td>
+                </tr>
+                <tr>
+                    <td>Languages:</td>
+                    <td>English, French</td>
+                </tr>
+                <tr>
+                    <td>Currency:</td>
+                    <td>Canadian Dollar (CAD)</td>
+                </tr>
+                <tr>
+                    <td>Time Zone:</td>
+                    <td>UTC-3.5 to UTC-8</td>
+                </tr>
+                <tr>
+                    <td>Call Code:</td>
+                    <td>+1</td>
+                </tr>
+            </table>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="week03/images/Sunshine.svg" alt="Weather Icon" width="80" height="80">
+            <table>
+                <tr>
+                    <td>Temperature:</td>
+                    <td>10 °C</td>
+                </tr>
+                <tr>
+                    <td>Conditions:</td>
+                    <td>Mainly Sunny</td>
+                </tr>
+                <tr>
+                    <td>Wind:</td>
+                    <td>SE 5 km/h</td>
+                </tr>
+                <tr>
+                    <td>Windchill:</td>
+                    <td><span id="modWindChill"></span> °C</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

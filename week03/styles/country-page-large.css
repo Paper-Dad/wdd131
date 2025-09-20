@@ -1,0 +1,30 @@
+@media screen and (min-width: 675px) {
+    .hero {
+        position: relative;
+        margin: 0;
+    }
+
+    div.data {
+        position: absolute;
+        top: 10%;
+        left: 1%;
+    }
+
+    div.weather {
+        position: absolute;
+        top: 30%;
+        right: 1%;
+    }
+
+    div.weather h2::after {
+        content: " 🌞";
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.67);
+    }
+}
