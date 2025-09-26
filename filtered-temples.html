@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album | Ben Roberts</title>
+    <meta name="description"
+        content="Temples picture Album for the week02 project for WDD 131 - Dynamic Web Fundamentals. THis webpage is designed by Ben Roberts and will work as a picture album displaying Temples for Ben Roberts">
+    <meta name="author" content="Benjamin Roberts">
+    <link rel="stylesheet" href="week04/styles/filtered-temples.css">
+    <link rel="stylesheet" href="week04/styles/filtered-temples-large.css">
+    <script src="week04/scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Winky+Rough:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="headti">Temple Album</h1>
+        <button id="menu"></button>
+        <nav class="link">
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="card-container" id="templeContainer"></div>
+    </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
