@@ -1,0 +1,111 @@
+* {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lavender;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    background-color: lightgrey;
+    padding: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+fieldset {
+    display: grid;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+input {
+    height: 50px;
+}
+
+select{
+    height: 50px;
+}
+
+.form-actions input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: 20px auto 0 auto;
+    padding: 12px 0;
+    background-color: lavender;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.form-actions input[type="submit"]:hover {
+    background-color: #d0bfff;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+label:has(input[type="checkbox"]) {
+    font-weight: lighter;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: large;
+}
+
+/*-------------------------footer Style---------------------------*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    background-color: lavender;
+}
+
+.foot {
+    margin: 0;
+    padding: 10px;
+    font-size: large;
+}
+
+.footy {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}

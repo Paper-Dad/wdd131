@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | Ben Roberts</title>
+    <link rel="stylesheet" href="week05/styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Winky+Rough:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+    <main style="background-color: lightgrey; border-radius: 20px; padding: 2rem; margin: 2rem;">
+        <div id="thankYouMessage" style="text-align: center; margin-bottom: 2rem;">
+            <h2>Your review has been submitted successfully.</h2>
+        </div>
+
+        <div id="reviewCounter" style="text-align: center; font-weight: bold; font-size: 1.2rem; margin-bottom: 2rem;"></div>
+
+        <div style="text-align: center;">
+            <a href="../form.html">
+                <button style="padding: 12px 20px; border-radius: 8px; background-color: lavender; border: none; font-weight: bold; cursor: pointer;">
+                    Submit Another Review
+                </button>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="foot">&copy; <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+            let reviewCount = localStorage.getItem('reviewCount');
+            reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+            reviewCount++;
+            localStorage.setItem('reviewCount', reviewCount);
+            const counterElem = document.getElementById('reviewCounter');
+            counterElem.textContent = `You have submitted ${reviewCount} review${reviewCount === 1 ? '' : 's'}.`;
+        });
+    </script>
+</body>
+
+</html>
