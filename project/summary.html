@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Summary - Ben Roberts</title>
+    <meta name="description"
+        content="This web page serves as the summary page for Team Avater Fan Page.  It will list each episode and have a short summary of that episode.">
+    <meta name="author" content="Benjamin Roberts">
+    <link rel="stylesheet" href="styles/summary.css">
+    <link rel="stylesheet" href="styles/summary-large.css">
+    <script src="scripts/summary.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Team-Avatar-Logo.webp" alt="Team Avatar Logo">
+        <button id="menu"></button>
+        <nav class="link">
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/ben-roberts-283044358/">Home</a></li>
+                <li><a href="https://byupw.instructure.com/.">Quiz</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=p7-p10#p7">Summary</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Avatar: The Last Airbender Episode Tracker</h1>
+        <label for="bookFilter">Filter by Book:</label>
+        <select id="bookFilter">
+            <option value="All">All</option>
+            <option value="Water">Book One: Water</option>
+            <option value="Earth">Book Two: Earth</option>
+            <option value="Fire">Book Three: Fire</option>
+        </select>
+        <div id="episode-container"></div>
+    </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
